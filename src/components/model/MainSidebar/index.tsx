@@ -64,7 +64,7 @@ const MainSidebar = () => {
         <ScrollArea className="h-screen">
           <div className="flex flex-row items-center m-4 mr-0">
             <img src="/logo.png" alt="logo" className="w-10 h-10" />
-            <div className="text-xl ml-2">KonoAsset</div>
+            <div className="text-xl ml-2">CoKonoAsset</div>
             <Button
               variant="outline"
               size="icon"

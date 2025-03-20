@@ -16,6 +16,7 @@ pub struct PreferenceStore {
 
     pub data_dir_path: PathBuf,
     pub theme: Theme,
+    pub theme_color: String,
     pub language: LanguageCode,
 
     pub delete_on_import: bool,
@@ -44,13 +45,14 @@ impl PreferenceStore {
         let app_local_data_dir = app_local_data_dir.unwrap();
         let preference_file_path = app_local_data_dir.join("preference.json");
 
-        let data_dir_path = app.path().document_dir().unwrap().join("KonoAsset");
+        let data_dir_path = app.path().document_dir().unwrap().join("CoKonoAsset");
 
         Ok(Self {
             file_path: preference_file_path,
 
             data_dir_path,
             theme: Theme::System,
+            theme_color: String::from("#e91e63"),
             language: LanguageCode::JaJp,
 
             delete_on_import: false,
@@ -100,6 +102,7 @@ impl PreferenceStore {
     pub fn overwrite(&mut self, other: &Self) {
         self.data_dir_path = other.data_dir_path.clone();
         self.theme = other.theme;
+        self.theme_color = other.theme_color.clone();
         self.delete_on_import = other.delete_on_import;
         self.use_unitypackage_selected_open = other.use_unitypackage_selected_open;
         self.update_channel = other.update_channel;

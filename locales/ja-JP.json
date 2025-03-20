@@ -10,7 +10,6 @@
     "general:button:select": "選択",
     "general:button:save": "保存",
     "general:button:open": "開く",
-
     "general:or": "または",
     "general:error": "エラー",
     "general:complete": "完了",
@@ -21,11 +20,9 @@
     "general:count": "個",
     "general:clear-filter": "フィルタをクリア",
     "general:show-all": "すべて表示",
-
     "general:typeavatar": "アバター素体",
     "general:typeavatarwearable": "アバター関連アセット",
     "general:typeworldobject": "ワールドアセット",
-
     "general:supported-avatars": "対応アバター",
     "general:category": "カテゴリ",
     "general:tag": "タグ",
@@ -37,7 +34,6 @@
     "general:assetdata": "アセットデータ",
     "general:assetdata:subtext": "アセットデータ本体",
     "general:prerequisite-assets": "前提アセット",
-
     "addasset:success-toast": "アセットが追加されました！",
     "addasset:cancel-toast": "キャンセルされました",
     "addasset:error-toast": "エラー: 追加に失敗しました",
@@ -97,7 +93,6 @@
     "addasset:get:error-toast:unknown-asset-type": "不明なアセットタイプです。",
     "addasset:get:success-toast": "アセット情報を変更しました！",
     "addasset:update-asset": "アセットを更新",
-
     "assetcard:open-button:show-dependency-warning-toast": "前提アセットがあります！",
     "assetcard:open-button:show-dependency-warning-toast:description": "開くボタンの下矢印から前提アセットを確認できます",
     "assetcard:open-button:open-dir": "管理フォルダを開く",
@@ -118,15 +113,11 @@
     "assetcard:select-unitypackage:always-open-dir": "次回から表示せず常に管理フォルダを開く",
     "assetcard:success-delete-toast": "正常に削除されました！",
     "assetcard:fail-delete-toast": "削除に失敗しました",
-
     "assetlist:background:no-assets": "アセットが1つも登録されていません",
     "assetlist:background:add-asset": "アセットを追加する",
     "assetlist:background:no-results": "フィルタ条件を満たすアセットがありません",
-
     "assetselector:search-placeholder": "前提アセットを検索...",
-
     "dependencydialog:header": "前提アセット一覧",
-
     "mainnavbar:total-asset-count:foretext": "",
     "mainnavbar:total-asset-count:posttext": "個のアセットのうち",
     "mainnavbar:showing": "を表示中",
@@ -139,7 +130,6 @@
     "mainnavbar:sort-settings:shop-name-desc": "ショップ名 (Z-A順)",
     "mainnavbar:sort-settings:published-at-desc": "商品公開日 (新しいものから)",
     "mainnavbar:sort-settings:published-at-asc": "商品公開日 (古いものから)",
-
     "mainsidebar:multi-filter-item-selector:placeholder": "アイテムを選択...",
     "mainsidebar:multi-filter-item-selector:no-candidates": "候補がありません",
     "mainsidebar:text-search": "テキストで検索",
@@ -153,7 +143,6 @@
     "mainsidebar:asset-type": "アセットタイプ",
     "mainsidebar:filter:category:placeholder": "カテゴリを選択...",
     "mainsidebar:filter:tag:placeholder": "タグを選択...",
-
     "resetdialog:reset": "初期化する",
     "resetdialog:reset-confirm": "本当に初期化しますか？",
     "resetdialog:reset-confirm:explanation-text-1": "この操作は取り消せないため、慎重に行ってください。",
@@ -161,42 +150,35 @@
     "resetdialog:reset:select-items": "削除する項目",
     "resetdialog:reset-confirm:checkbox-text": "私は削除後のデータが元に戻せないことを理解しています",
     "resetdialog:button:delete": "削除する",
-
     "slimassetdetail:edit-info": "情報を編集",
-
     "squareimage:image": "画像",
-
     "taskstatushandler:failed-to-cancel-task": "キャンセルに失敗しました",
-
     "loaderror:load-error": "読み込みに失敗しました",
-    "loaderror:load-error:description": "KonoAssetは正常にデータをロードできませんでした",
+    "loaderror:load-error:description": "CoKonoAssetは正常にデータをロードできませんでした",
     "loaderror:load-error:errormessage": "エラーメッセージ: ",
     "loaderror:load-error:explanation-text": "続行するにはデータを修復するか、初期化する必要があります",
     "loaderror:button:open-data-dir": "データフォルダを開く",
     "loaderror:appdata-not-found-text": "設定ファイルが読み込めていないため、パスが不明です",
     "loaderror:report-error": "問題を報告する:",
-
     "preference:toast-version-copied": "バージョン情報をコピーしました！",
     "preference:back-to-top": "トップ画面に戻る",
     "preference:settings": "一般設定",
     "preference:adapter": "データの移行",
     "preference:logs": "ログの確認",
     "preference:about": "このアプリについて",
-
     "preference:about:description": "「このアセットにしよ！」 をもっと簡単にするための VRChat 向けアセット管理ツール",
     "preference:about:related-links": "関連リンク",
     "preference:about:changes": "変更履歴",
     "preference:about:changes-github": "GitHubで見る",
-    "preference:about:members": "KonoAsset制作メンバー",
+    "preference:about:members": "CoKonoAsset制作メンバー",
     "preference:about:extra-members-text": "およびコントリビューターの皆さま",
     "preference:about:support": "支援について",
     "preference:about:support-text-1": "GitHub におけるコントリビューションで、本プロジェクトを支援することができます",
     "preference:about:support-text-2": "金銭的な支援は受け付けていません",
-    "preference:about:support-text-3": "KonoAssetは3Dモデルを制作するクリエイターがいて初めて役割が与えられるソフトウェアです",
+    "preference:about:support-text-3": "CoKonoAssetは3Dモデルを制作するクリエイターがいて初めて役割が与えられるソフトウェアです",
     "preference:about:support-text-4": "クリエイターの方々への支援を優先していただくことが、我々にとっても励みになります",
-
     "preference:adapter:import": "インポート",
-    "preference:adapter:import:description": "KonoAsset互換のデータを選択して、既存のデータに追加します",
+    "preference:adapter:import:description": "CoKonoAsset互換のデータを選択して、既存のデータに追加します",
     "preference:adapter:import:alert": "注意",
     "preference:adapter:import:alert:description": "インポートを実行する前に、データをバックアップすることを推奨します！",
     "preference:adapter:import:button:zip": "ZIPファイルからインポート",
@@ -206,12 +188,11 @@
     "preference:adapter:import:completed": "インポートが完了しました！",
     "preference:adapter:import:failed": "インポートに失敗しました",
     "preference:adapter:import:cancelled": "インポートがキャンセルされました",
-
     "preference:adapter:export": "エクスポート",
     "preference:adapter:export:description": "形式を指定して登録されているデータを出力します",
     "preference:adapter:export:select-type": "出力形式を選択",
-    "preference:adapter:export:type:konoasset:title": "他デバイスのKonoAssetへ移行するため",
-    "preference:adapter:export:type:konoasset:description": "KonoAssetで使用される形式のZIPファイル(無圧縮)で出力します",
+    "preference:adapter:export:type:konoasset:title": "他デバイスのCoKonoAssetへ移行するため",
+    "preference:adapter:export:type:konoasset:description": "CoKonoAssetで使用される形式のZIPファイル(無圧縮)で出力します",
     "preference:adapter:export:type:avatar-explorer:title": "Avatar Explorerへ移行するため",
     "preference:adapter:export:type:avatar-explorer:description": "Avatar Explorerで読み込める形式に変換して出力します",
     "preference:adapter:export:type:human-readable-zip:title": "エクスプローラー等で表示するため",
@@ -224,11 +205,8 @@
     "preference:adapter:export:completed": "エクスポートが完了しました！",
     "preference:adapter:export:failed": "エクスポートに失敗しました",
     "preference:adapter:export:cancelled": "エクスポートがキャンセルされました",
-
     "preference:logs:open-logs-folder": "フォルダを開く",
-
     "preference:settings:destination-select:error-toast": "データフォルダの移行に失敗しました",
-
     "preference:settings:destination-select:change-data-dir": "アプリデータの保存先を変更する",
     "preference:settings:destination-select:explanation-text": "アセットや画像データを保存するディレクトリを変更する場合は以下の入力を行い移行してください",
     "preference:settings:destination-select:original-data-dir": "元の保存先",
@@ -238,62 +216,46 @@
     "preference:settings:destination-select:warn-text-2": "十分に理解している場合のみ行ってください",
     "preference:settings:destination-select:move": "移行",
     "preference:settings:destination-select:change": "変更",
-
     "preference:settings:progress-bar:success-toast": "データの移行が完了しました！",
-
     "preference:settings:progress-bar:title": "移行中...",
     "preference:settings:progress-bar:description": "データを移行しています...",
-
     "preference:settings:application-data": "アプリデータの保存先",
     "preference:settings:application-data:explanation-text": "アセットや画像を保存するディレクトリを設定します",
     "preference:settings:application-data:change": "変更する",
-
     "preference:settings:delete-source": "インポート後に元ファイル/フォルダを削除する",
     "preference:settings:delete-source:explanation-text": "この設定が有効の場合、アセットをインポートした後に元ファイル/フォルダが自動で削除されます",
-
     "preference:settings:language": "言語",
     "preference:settings:language:explanation-text": "アプリの言語を選択します",
-
     "preference:settings:reset": "アプリケーションを初期化する",
     "preference:settings:reset:explanation-text": "アプリケーションに登録されているデータを選択して、それらを初期化します。",
     "preference:settings:reset:warning-text": "この操作は取り消せません！",
-
     "preference:settings:theme": "テーマ",
     "preference:settings:theme:explanation-text": "アプリのテーマを設定します",
     "preference:settings:theme:system": "システム設定を利用",
     "preference:settings:theme:light": "ライト",
     "preference:settings:theme:dark": "ダーク",
-
+    "preference:settings:theme-color:explanation-text": "テーマのカラーを設定します",
     "preference:settings:update-channel": "アップデートチャンネル",
     "preference:settings:update-channel:explanation-text-1": "アップデートを受け取るチャンネルを指定します",
     "preference:settings:update-channel:explanation-text-2": "Pre-Releaseチャンネルでは最新の機能が素早く得られる代わりに、バグが混入しやすくなります",
     "preference:settings:update-channel:stable": "Stable (安定版)",
     "preference:settings:update-channel:pre-release": "Pre-Release (非安定版)",
-
     "preference:settings:use-unitypackage-selector": "Unitypackageを優先して開く",
     "preference:settings:use-unitypackage-selector:explanation-text": "この設定が有効の場合「開く」ボタンを押したときにUnitypackageが選択された状態で開いたり、複数ある場合は利用するファイルを選ぶダイアログが表示されたりします",
-
     "top:new-update-toast": "新しいアップデートがあります！",
     "top:new-update-toast:description": "アップデートにはバグ修正、機能追加などが含まれます",
     "top:new-update-toast:button": "アップデートする",
     "top:new-update-toast:close": "今はしない",
-
     "top:add-text": "ファイルをドロップしてアセットを追加",
-
-    "setup:welcome": "KonoAssetへようこそ！",
-
+    "setup:welcome": "CoKonoAssetへようこそ！",
     "setup:sidebar:1": "表示の設定",
     "setup:sidebar:2": "保存場所の設定",
     "setup:sidebar:3": "その他の設定",
-
     "setup:tab:2:title": "データの保存場所の選択",
     "setup:tab:2:description-1": "アセットのデータを保存するディレクトリを選択します",
     "setup:tab:2:description-2": "このディレクトリは後から設定で変更できます",
-
     "setup:tab:2:input-label": "現在の保存場所",
-
     "setup:button:done": "利用をはじめる！",
-
     "ui:multi-select:create-new": "新しく作成",
     "ui:multi-select:select-all": "全て選択"
   }

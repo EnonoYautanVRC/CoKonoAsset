@@ -660,6 +660,39 @@ dependencies = [
 ]
 
 [[package]]
+name = "cokonoasset"
+version = "1.0.2"
+dependencies = [
+ "async_zip",
+ "chrono",
+ "encoding_rs",
+ "kanaria",
+ "log",
+ "monostate",
+ "opener",
+ "regex",
+ "reqwest",
+ "ringbuffer",
+ "sanitize-filename",
+ "serde",
+ "serde_json",
+ "serde_with",
+ "showfile",
+ "specta",
+ "specta-typescript",
+ "tauri",
+ "tauri-build",
+ "tauri-plugin-dialog",
+ "tauri-plugin-shell",
+ "tauri-plugin-single-instance",
+ "tauri-plugin-updater",
+ "tauri-specta",
+ "tokio",
+ "tokio-util",
+ "uuid",
+]
+
+[[package]]
 name = "combine"
 version = "4.6.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2221,39 +2254,6 @@ dependencies = [
  "bitflags 2.8.0",
  "serde",
  "unicode-segmentation",
-]
-
-[[package]]
-name = "konoasset"
-version = "1.0.2"
-dependencies = [
- "async_zip",
- "chrono",
- "encoding_rs",
- "kanaria",
- "log",
- "monostate",
- "opener",
- "regex",
- "reqwest",
- "ringbuffer",
- "sanitize-filename",
- "serde",
- "serde_json",
- "serde_with",
- "showfile",
- "specta",
- "specta-typescript",
- "tauri",
- "tauri-build",
- "tauri-plugin-dialog",
- "tauri-plugin-shell",
- "tauri-plugin-single-instance",
- "tauri-plugin-updater",
- "tauri-specta",
- "tokio",
- "tokio-util",
- "uuid",
 ]
 
 [[package]]

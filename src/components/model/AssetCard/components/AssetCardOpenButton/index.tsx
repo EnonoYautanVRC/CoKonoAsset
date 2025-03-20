@@ -69,10 +69,10 @@ const AssetCardOpenButton = ({
         {mainButtonChecked && <Check size={24} />}
         <p> {t('general:button:open')} </p>
       </Button>
-      <Separator orientation="vertical" className="bg-card" />
+      <Separator orientation="vertical" className="bg-primary-foreground" />
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button className="rounded-l-none w-2 p-3 m-0">
+          <Button className="w-2 p-3 m-0 rounded-l-none">
             <ChevronDown />
           </Button>
         </DropdownMenuTrigger>

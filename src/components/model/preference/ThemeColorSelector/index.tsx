@@ -9,23 +9,24 @@ import {
 } from '@/components/ui/select'
 import { FC } from 'react'
 import { useLocalization } from '@/hooks/use-localization'
+import { HsvaColor, Wheel } from '@uiw/react-color'
 
 type Props = {
-  theme: Theme
-  setTheme: (theme: Theme) => void
+  color: HsvaColor
+  setColor: (color: string) => void
 }
 
-const ThemeSelector: FC<Props> = ({ theme, setTheme }) => {
+const ThemeColorSelector: FC<Props> = ({ color, setColor }) => {
   const { t } = useLocalization()
   return (
     <div className="flex flex-row items-center">
       <div className="space-y-2">
-        <Label className="text-xl">{t('preference:settings:theme')}</Label>
         <p className="text-sm text-muted-foreground">
-          {t('preference:settings:theme:explanation-text')}
+          {t('preference:settings:theme-color:explanation-text')}
         </p>
       </div>
-      <Select value={theme} onValueChange={setTheme}>
+      <Wheel className="ml-auto w-[240px]" color={color} onChange={(color) => { setColor(color.hex) }} />
+      {/* <Select value={theme} onValueChange={setTheme}>
         <SelectTrigger className="ml-auto w-[180px]">
           <SelectValue placeholder={t('general:select:placeholder')} />
         </SelectTrigger>
@@ -40,9 +41,9 @@ const ThemeSelector: FC<Props> = ({ theme, setTheme }) => {
             {t('preference:settings:theme:dark')}
           </SelectItem>
         </SelectContent>
-      </Select>
+      </Select> */}
     </div>
   )
 }
 
-export default ThemeSelector
+export default ThemeColorSelector

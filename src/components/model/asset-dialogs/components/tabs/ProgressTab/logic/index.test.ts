@@ -15,8 +15,8 @@ describe('ProgressTab Logic', () => {
 
     expect(
       truncateFilename(
-        'C:\\Users\\username\\Documents\\KonoAsset\\data\\something\\text.txt',
+        'C:\\Users\\username\\Documents\\CoKonoAsset\\data\\something\\text.txt',
       ),
-    ).toBe('C:\\Users\\username\\Documents\\KonoAsset\\ ... \\text.txt')
+    ).toBe('C:\\Users\\username\\Documents\\CoKonoAsset\\ ... \\text.txt')
   })
 })
