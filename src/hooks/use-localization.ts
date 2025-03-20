@@ -12,7 +12,6 @@ export const useLocalization = (): ReturnProps => {
     const value = data.data[id] ?? ''
 
     if (value === undefined) {
-      console.error("\"" + id + "\" was not found");
       return ''
     }
 

@@ -44,7 +44,6 @@ export const getDefaultPreferences = (): PreferenceStore => {
   return {
     dataDirPath: '',
     theme: 'system',
-    themeColor: "#e91e63",
     useUnitypackageSelectedOpen: true,
     deleteOnImport: true,
     updateChannel: 'Stable',

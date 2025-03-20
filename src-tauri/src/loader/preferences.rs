@@ -75,7 +75,6 @@ impl TryFrom<PreferenceStore> for VersionedPreferences {
 pub struct LegacyPreferenceStoreV3 {
     pub data_dir_path: PathBuf,
     pub theme: Theme,
-    pub theme_color: String,
     pub delete_on_import: bool,
     pub use_unitypackage_selected_open: bool,
     pub update_channel: UpdateChannel,
@@ -87,7 +86,6 @@ impl Into<PreferenceStore> for LegacyPreferenceStoreV3 {
             file_path: Default::default(),
             data_dir_path: self.data_dir_path,
             theme: self.theme,
-            theme_color: self.theme_color,
             language: LanguageCode::JaJp,
             delete_on_import: self.delete_on_import,
             use_unitypackage_selected_open: self.use_unitypackage_selected_open,
@@ -114,7 +112,6 @@ impl Into<LegacyPreferenceStoreV3> for LegacyPreferenceStoreV2 {
         LegacyPreferenceStoreV3 {
             data_dir_path: self.data_dir_path,
             theme: self.theme,
-            theme_color: String::from("#e91e63"),
             delete_on_import: self.delete_on_import,
             use_unitypackage_selected_open: self.use_unitypackage_selected_open,
             // for beta testers

@@ -9,18 +9,18 @@ const badgeVariants = cva(
     variants: {
       variant: {
         default:
-          'rounded-sm border-transparent bg-secondaryContainer text-secondaryContainer-foreground hover:bg-secondaryContainer-foreground/10',
+          'border-transparent bg-primary text-primary-foreground hover:bg-primary/80',
         secondary:
           'border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80',
         destructive:
           'border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80',
         outline: 'text-foreground',
         avatar:
-          'border-transparent bg-budge_avatar text-budge_avatar-foreground hover:bg-budge_avatar/80',
+          'border-transparent bg-primary text-primary-foreground hover:bg-primary/80',
         avatarWearable:
-          'border-transparent bg-budge_avatarWearable text-budge_avatarWearable-foreground hover:bg-budge_avatarWearable/80',
+          'border-transparent bg-yellow-400 hover:bg-yellow-400/80 dark:bg-yellow-600 dark:hover:bg-yellow-600/80',
         worldObject:
-          'border-transparent bg-budge_worldObject text-budge_worldObject-foreground hover:bg-budge_worldObject/80',
+          'border-transparent bg-sky-400 hover:bg-sky-400/80 dark:bg-sky-600 dark:hover:bg-sky-600/80',
       },
     },
     defaultVariants: {
@@ -31,7 +31,7 @@ const badgeVariants = cva(
 
 export interface BadgeProps
   extends React.HTMLAttributes<HTMLDivElement>,
-  VariantProps<typeof badgeVariants> { }
+    VariantProps<typeof badgeVariants> {}
 
 function Badge({ className, variant, ...props }: BadgeProps) {
   return (

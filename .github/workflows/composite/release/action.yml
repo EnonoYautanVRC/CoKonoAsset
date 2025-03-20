@@ -64,8 +64,8 @@ runs:
         TAURI_SIGNING_PRIVATE_KEY: ${{ inputs.TAURI_PRIVATE_KEY }}
         TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ inputs.TAURI_PRIVATE_KEY_PASSWORD }}
       with:
-        tagName: "cokonoasset-v__VERSION__"
-        releaseName: "CoKonoAsset v__VERSION__"
+        tagName: "konoasset-v__VERSION__"
+        releaseName: "KonoAsset v__VERSION__"
         includeUpdaterJson: true
         updaterJsonPreferNsis: true
         prerelease: ${{ inputs.releaseChannel == 'pre-release' }}

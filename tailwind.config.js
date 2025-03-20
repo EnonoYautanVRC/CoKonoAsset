@@ -17,12 +17,9 @@ export default {
     },
     extend: {
       borderRadius: {
-        fl: "9999px",
-        xl: "28px",
-        lg: '16px',
-        md: '12px',
-        sm: '8px',
-        xs: '4px',
+        lg: 'var(--radius)',
+        md: 'calc(var(--radius) - 2px)',
+        sm: 'calc(var(--radius) - 4px)',
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -43,10 +40,6 @@ export default {
           DEFAULT: 'hsl(var(--secondary))',
           foreground: 'hsl(var(--secondary-foreground))',
         },
-        secondaryContainer: {
-          DEFAULT: 'hsl(var(--secondaryContainer))',
-          foreground: 'hsl(var(--onSecondaryContainer))',
-        },
         muted: {
           DEFAULT: 'hsl(var(--muted))',
           foreground: 'hsl(var(--muted-foreground))',
@@ -58,18 +51,6 @@ export default {
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
           foreground: 'hsl(var(--destructive-foreground))',
-        },
-        budge_avatar: {
-          DEFAULT: "hsl(var(--budge-avatar-color))",
-          foreground: "hsl(var(--budge-avatar-onColor))",
-        },
-        budge_avatarWearable: {
-          DEFAULT: "hsl(var(--budge-avatarWearable-color))",
-          foreground: "hsl(var(--budge-avatarWearable-onColor))",
-        },
-        budge_worldObject: {
-          DEFAULT: "hsl(var(--budge-worldObject-color))",
-          foreground: "hsl(var(--budge-worldObject-onColor))",
         },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

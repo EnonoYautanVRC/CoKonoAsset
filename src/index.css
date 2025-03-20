@@ -4,47 +4,58 @@
 
 @layer base {
   :root {
-    --surfaceContainer: var(--neutral-94);
-    --surfaceContainerHighest: var(--neutral-90);
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 346.8 71% 60%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 346.8 77.2% 49.8%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
   }
-  :root.dark {
-    --surfaceContainer: var(--neutral-12);
-    --surfaceContainerHighest: var(--neutral-22);
-  }
-  :root {
-    --background: var(--surface, 0 0 100);
-    --foreground: var(--onBackground, 0 0 0);
-    --card: var(--surfaceContainerHighest, 0 0 80);
-    --card-foreground: var(--onSurface, 0 0 0);
-    --popover: var(--surfaceContainer, 0 0 90);
-    --popover-foreground: var(--onSurface);
-    --primary: var(--primary, 0 0 100);
-    --primary-foreground: var(--onPrimary, 0 0 0);
-    --secondary: var(--secondary);
-    --secondary-foreground: var(--onSecondary);
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 0 0% 95%;
+    --card: 24 9.8% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 346.8 50.2% 49.8%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
     --muted: 0 0% 15%;
     --muted-foreground: 240 5% 64.9%;
-    --accent: var(--primary, 0 0 80);
-    --accent-foreground: var(--onPrimary, 0 0 0);
-    --destructive: var(--error, 0 0 0);
-    --destructive-foreground: var(--onError, 0 0 100);
-    --border: var(--outline, 0 0 0);
-    --input: 160 5.9% 20%;
-    --ring: var(--primary, 0 0 0);
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 346.8 77.2% 49.8%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-    --corner-medium: 12px;
-    --budge-avatar-color: var(--budge-avatar-color, 0 0 80);
-    --budge-avatar-onColor: var(--budge-avatar-onColor, 0 0 0);
-    --budge-avatarWearable-color: var(--budge-avatarWearable-color, 0 0 50);
-    --budge-avatarWearable-onColor: var(--budge-avatarWearable-onColor, 0 0 100);
-    --budge-worldObject-color: var(--budge-worldObject-color, 0 0 0);
-    --budge-worldObject-onColor: var(--budge-worldObject-onColor, 0 0 100);
-    --secondaryContainer: var(--secondaryContainer);
-    --onSecondaryContainer: var(--onSecondaryContainer);
   }
 }
 
