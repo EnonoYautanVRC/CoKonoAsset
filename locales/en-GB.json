@@ -40,7 +40,7 @@
 
     "addasset:success-toast": "Asset added successfully!",
     "addasset:cancel-toast": "Cancelled",
-    "addasset:error-toast": "Error: Failed to add asset",
+    "addasset:error-toast": "Failed to add asset",
     "addasset:error-toast:description": "Check the log for error details",
     "addasset:import-error-toast": "Failed to import data",
     "addasset:import-start-error-toast": "Failed to start data import",
@@ -278,6 +278,13 @@
     "top:new-update-toast:button": "Update now",
     "top:new-update-toast:close": "Not now",
 
+    "top:update-dialog:title": "Preparing update",
+    "top:update-dialog:description": "Downloading update...",
+    "top:update-dialog:downloading:foretext": "Downloading (",
+    "top:update-dialog:downloading:posttext": "%)",
+    "top:update-dialog:download-complete": "Update downloaded",
+    "top:update-dialog:execute": "Update",
+
     "top:add-text": "Drop files to add assets",
 
     "setup:welcome": "Welcome to KonoAsset!",
@@ -289,6 +296,7 @@
     "setup:tab:2:title": "Select storage location",
     "setup:tab:2:description-1": "Choose a directory to store the asset data",
     "setup:tab:2:description-2": "This directory can be changed later in the settings tab",
+    "setup:tab:2:directory-open-error-toast": "Failed to open directory",
 
     "setup:tab:2:input-label": "Current storage location",
 
