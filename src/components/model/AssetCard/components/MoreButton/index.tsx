@@ -68,14 +68,14 @@ export const MoreButton = ({
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="secondary" className="my-auto w-10 h-10">
+        <Button variant="outline" className="w-10 h-10 my-auto">
           <MoreHorizontal />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <TooltipProvider>
           <Tooltip>
-            <TooltipTrigger className="cursor-default w-full">
+            <TooltipTrigger className="w-full cursor-default">
               <DropdownMenuItem asChild disabled={boothUrl === undefined}>
                 <a
                   href={boothUrl}
@@ -105,7 +105,7 @@ export const MoreButton = ({
         <AlertDialog open={dialogOpened} onOpenChange={setDialogOpened}>
           <AlertDialogTrigger asChild>
             <DropdownMenuItem
-              className="font-bold text-destructive focus:text-destructive dark:text-red-500 dark:focus:text-red-500"
+              className="font-bold text-destructive focus:text-destructive"
               onSelect={(e) => e.preventDefault()}
             >
               <Trash2 size={16} className="text-card-foreground/40" />

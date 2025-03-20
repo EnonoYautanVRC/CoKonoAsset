@@ -7,24 +7,36 @@
     ":enableVulnerabilityAlertsWithLabel(vulnerabilities)",
     ":timezone(Asia/Tokyo)"
   ],
-  "labels": ["dependencies"],
-  "schedule": ["after 9:00 before 23:00"],
-  "assignees": ["siloneco"],
+  "labels": [
+    "dependencies"
+  ],
+  "schedule": [
+    "after 9:00 before 23:00"
+  ],
+  "assignees": [
+    "siloneco"
+  ],
   "lockFileMaintenance": {
     "enabled": true
   },
   "packageRules": [
     {
       "groupName": "[Frontend] Update dependencies",
-      "matchFileNames": ["package.json"]
+      "matchFileNames": [
+        "package.json"
+      ]
     },
     {
       "groupName": "[Backend] Update dependencies",
-      "matchFileNames": ["src-tauri/Cargo.toml"]
+      "matchFileNames": [
+        "src-tauri/Cargo.toml"
+      ]
     },
     {
       "groupName": "[CI/CD] Update dependencies",
-      "matchFileNames": [".github/workflows/**/*.yml"]
+      "matchFileNames": [
+        ".github/workflows/**/*.yml"
+      ]
     }
   ]
 }

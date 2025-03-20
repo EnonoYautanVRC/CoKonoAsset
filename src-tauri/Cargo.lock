@@ -599,6 +599,40 @@ dependencies = [
  "windows-link",
 ]
 
+
+[[package]]
+name = "cokonoasset"
+version = "1.1.0-rc.0"
+dependencies = [
+ "async_zip",
+ "chrono",
+ "encoding_rs",
+ "kanaria",
+ "log",
+ "monostate",
+ "opener",
+ "regex",
+ "reqwest",
+ "ringbuffer",
+ "sanitize-filename",
+ "serde",
+ "serde_json",
+ "serde_with",
+ "showfile",
+ "specta",
+ "specta-typescript",
+ "tauri",
+ "tauri-build",
+ "tauri-plugin-deep-link",
+ "tauri-plugin-dialog",
+ "tauri-plugin-shell",
+ "tauri-plugin-single-instance",
+ "tauri-plugin-updater",
+ "tauri-specta",
+ "tokio",
+ "tokio-util",
+ "uuid",
+]
 [[package]]
 name = "combine"
 version = "4.6.7"
@@ -2159,40 +2193,6 @@ dependencies = [
  "bitflags 2.9.0",
  "serde",
  "unicode-segmentation",
-]
-
-[[package]]
-name = "konoasset"
-version = "1.1.0-rc.0"
-dependencies = [
- "async_zip",
- "chrono",
- "encoding_rs",
- "kanaria",
- "log",
- "monostate",
- "opener",
- "regex",
- "reqwest",
- "ringbuffer",
- "sanitize-filename",
- "serde",
- "serde_json",
- "serde_with",
- "showfile",
- "specta",
- "specta-typescript",
- "tauri",
- "tauri-build",
- "tauri-plugin-deep-link",
- "tauri-plugin-dialog",
- "tauri-plugin-shell",
- "tauri-plugin-single-instance",
- "tauri-plugin-updater",
- "tauri-specta",
- "tokio",
- "tokio-util",
- "uuid",
 ]
 
 [[package]]
