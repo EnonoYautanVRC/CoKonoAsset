@@ -8,13 +8,18 @@ import DataDirSelector from './components/DataDirSelector'
 import ResetButton from './components/ResetButton'
 import { Separator } from '@/components/ui/separator'
 import ThemeSelector from '@/components/model/preference/ThemeSelector'
-import ThemeColorSelector from "@/components/model/preference/ThemeColorSelector"
+import ThemeColorSelector from '@/components/model/preference/ThemeColorSelector'
 import UseUnitypackageSelectorToggle from '@/components/model/preference/UseUnitypackageSelectorToggle'
 import DeleteSourceToggle from '@/components/model/preference/DeleteSourceToggle'
 import { LanguageSelector } from '@/components/model/preference/LanguageSelector'
 import UpdateChannelSelector from '@/components/model/preference/UpdateChannelSelector'
-import { argbFromHex, themeFromSourceColor, hexFromArgb, Hct } from "@material/material-color-utilities"
-import convert from 'color-convert';
+import {
+  argbFromHex,
+  themeFromSourceColor,
+  hexFromArgb,
+  Hct,
+} from '@material/material-color-utilities'
+import convert from 'color-convert'
 import { hexToHsva } from '@uiw/react-color'
 
 type Props = {
@@ -34,60 +39,108 @@ const SettingsTab: FC<Props> = ({ id }) => {
           }}
         />
         <ThemeColorSelector
-          color={hexToHsva(preference.themeColor || "#ff00ff")}
-          setColor={async (color: any) => {
-            await setPreference({ ...preference, themeColor: color }, true);
+          color={hexToHsva(preference.themeColor || '#ff00ff')}
+          setColor={async (color: string) => {
+            await setPreference({ ...preference, themeColor: color }, true)
             const theme = themeFromSourceColor(argbFromHex(color), [
               {
-                name: "budge-avatar",
-                value: argbFromHex("#bf3f5b"),
-                blend: true
+                name: 'budge-avatar',
+                value: argbFromHex('#bf3f5b'),
+                blend: true,
               },
               {
-                name: "budge-avatarWearable",
-                value: argbFromHex("#facc15"),
-                blend: true
+                name: 'budge-avatarWearable',
+                value: argbFromHex('#facc15'),
+                blend: true,
               },
               {
-                name: "budge-worldObject",
-                value: argbFromHex("#38bdf8"),
-                blend: true
-              }
-            ]);
+                name: 'budge-worldObject',
+                value: argbFromHex('#38bdf8'),
+                blend: true,
+              },
+            ])
 
-            const styleElement = document.querySelector("style#Material") || document.createElement("style");
-            styleElement.id = "Material";
-            const lightThemes = [];
-            const darkThemes = [];
+            const styleElement: HTMLElement =
+              document.querySelector('style#Material') ||
+              document.createElement('style')
+            styleElement.id = 'Material'
+            const lightThemes = []
+            const darkThemes = []
 
             // console.debug(theme);
 
             for (const k in theme.schemes.light.props) {
-              lightThemes.push("--" + k + ":" + convert.hex.hsl(hexFromArgb(theme.schemes.light.props[k])).join(' ') + ";");
+              lightThemes.push(
+                '--' +
+                k +
+                ':' +
+                convert.hex
+                  .hsl(hexFromArgb(theme.schemes.light.props[k]))
+                  .join(' ') +
+                ';',
+              )
             }
             for (const k in theme.schemes.dark.props) {
-              darkThemes.push("--" + k + ":" + convert.hex.hsl(hexFromArgb(theme.schemes.dark.props[k])).join(" ") + ";");
+              darkThemes.push(
+                '--' +
+                k +
+                ':' +
+                convert.hex
+                  .hsl(hexFromArgb(theme.schemes.dark.props[k]))
+                  .join(' ') +
+                ';',
+              )
             }
             for (const k in theme.palettes) {
               for (let i = 0; i <= 100; i++) {
-                const color = Hct.from(theme.palettes[k].hue, theme.palettes[k].chroma, i).toInt();
-                lightThemes.push("--" + k + "-" + i + ":" + convert.hex.hsl(hexFromArgb(color)).join(' ') + ";");
+                const color = Hct.from(
+                  theme.palettes[k].hue,
+                  theme.palettes[k].chroma,
+                  i,
+                ).toInt()
+                lightThemes.push(
+                  '--' +
+                  k +
+                  '-' +
+                  i +
+                  ':' +
+                  convert.hex.hsl(hexFromArgb(color)).join(' ') +
+                  ';',
+                )
               }
             }
             theme.customColors.forEach((e) => {
               for (const k in e.light) {
-                lightThemes.push("--" + e.color.name + "-" + k + ":" + convert.hex.hsl(hexFromArgb(e.light[k])).join(" ") + ";");
+                lightThemes.push(
+                  '--' +
+                  e.color.name +
+                  '-' +
+                  k +
+                  ':' +
+                  convert.hex.hsl(hexFromArgb(e.light[k])).join(' ') +
+                  ';',
+                )
               }
               for (const k in e.dark) {
-                darkThemes.push("--" + e.color.name + "-" + k + ":" + convert.hex.hsl(hexFromArgb(e.dark[k])).join(" ") + ";");
+                darkThemes.push(
+                  '--' +
+                  e.color.name +
+                  '-' +
+                  k +
+                  ':' +
+                  convert.hex.hsl(hexFromArgb(e.dark[k])).join(' ') +
+                  ';',
+                )
               }
-            });
+            })
 
-            styleElement.innerText = ":root{" + lightThemes.join("") + "}:root.dark{" + darkThemes.join("") + "}";
-            document.head.append(styleElement);
-            console.debug(color);
-            console.debug(preference.themeColor);
-
+            styleElement.innerText =
+              ':root{' +
+              lightThemes.join('') +
+              '}:root.dark{' +
+              darkThemes.join('') +
+              '}'
+            document.head.append(styleElement)
           }}
         />
         <DataDirSelector

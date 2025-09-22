@@ -40,7 +40,10 @@
     --budge-avatar-color: var(--budge-avatar-color, 0 0 80);
     --budge-avatar-onColor: var(--budge-avatar-onColor, 0 0 0);
     --budge-avatarWearable-color: var(--budge-avatarWearable-color, 0 0 50);
-    --budge-avatarWearable-onColor: var(--budge-avatarWearable-onColor, 0 0 100);
+    --budge-avatarWearable-onColor: var(
+      --budge-avatarWearable-onColor,
+      0 0 100
+    );
     --budge-worldObject-color: var(--budge-worldObject-color, 0 0 0);
     --budge-worldObject-onColor: var(--budge-worldObject-onColor, 0 0 100);
     --secondaryContainer: var(--secondaryContainer);

@@ -64,8 +64,8 @@ runs:
         TAURI_SIGNING_PRIVATE_KEY: ${{ inputs.TAURI_PRIVATE_KEY }}
         TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ inputs.TAURI_PRIVATE_KEY_PASSWORD }}
       with:
-        tagName: "konoasset-v__VERSION__"
-        releaseName: "KonoAsset v__VERSION__"
+        tagName: "cokonoasset-v__VERSION__"
+        releaseName: "CoKonoAsset v__VERSION__"
         includeUpdaterJson: true
         updaterJsonPreferNsis: true
         prerelease: ${{ inputs.releaseChannel == 'pre-release' }}
@@ -83,7 +83,7 @@ runs:
 
           const url = latestJson['platforms']['windows-x86_64']['url'];
           const filename = path.basename(url);
-          const newUrl = `https://releases.konoasset.dev/installer/${filename}`;
+          const newUrl = `https://releases.cokonoasset.dev/installer/${filename}`;
 
           latestJson['platforms']['windows-x86_64']['url'] = newUrl;
 

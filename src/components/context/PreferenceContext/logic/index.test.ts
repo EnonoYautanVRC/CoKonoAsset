@@ -7,6 +7,7 @@ import * as utils from '@/lib/utils'
 const mockPreference: PreferenceStore = {
   dataDirPath: '/path/to/data/dir',
   theme: 'system',
+  themeColor: "#e91e63",
   useUnitypackageSelectedOpen: true,
   deleteOnImport: true,
   updateChannel: 'Stable',

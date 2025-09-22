@@ -1,12 +1,3 @@
-import { Theme } from '@/lib/bindings'
-import { Label } from '@/components/ui/label'
-import {
-  Select,
-  SelectTrigger,
-  SelectValue,
-  SelectContent,
-  SelectItem,
-} from '@/components/ui/select'
 import { FC } from 'react'
 import { useLocalization } from '@/hooks/use-localization'
 import { HsvaColor, Wheel } from '@uiw/react-color'
@@ -25,7 +16,13 @@ const ThemeColorSelector: FC<Props> = ({ color, setColor }) => {
           {t('preference:settings:theme-color:explanation-text')}
         </p>
       </div>
-      <Wheel className="ml-auto w-[240px]" color={color} onChange={(color) => { setColor(color.hex) }} />
+      <Wheel
+        className="ml-auto w-[240px]"
+        color={color}
+        onChange={(color) => {
+          setColor(color.hex)
+        }}
+      />
       {/* <Select value={theme} onValueChange={setTheme}>
         <SelectTrigger className="ml-auto w-[180px]">
           <SelectValue placeholder={t('general:select:placeholder')} />
